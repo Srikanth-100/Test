@@ -1,0 +1,15 @@
+<apex:page standardcontroller="Account" extensions="ContactNavigation" sidebar="false" showHeader="false">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:inputfield value="{!myNewContact.lastname}"/>
+                <apex:inputfield value="{!myNewContact.firstname}"/>
+                <apex:inputfield value="{!myNewContact.email}"/>
+                <apex:inputfield value="{!myNewContact.MobilePhone}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton action="{!SaveRecord}" value="Save"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
