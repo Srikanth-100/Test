@@ -1,5 +1,5 @@
 <apex:page standardcontroller="Account" extensions="ContactNavigation" sidebar="false" showHeader="false">
-    <apex:form >
+    <apex:form id="formid">
         <apex:pageBlock >
             <apex:pageBlockSection >
                 <apex:inputfield value="{!myNewContact.lastname}"/>

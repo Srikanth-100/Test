@@ -7,7 +7,6 @@ public class ContactNavigation {
         myNewContact = new contact();
     }
     public pageReference SaveRecord(){
-        
         myNewContact.AccountId = acc.Id;
         Insert myNewContact;
         PageReference pageRef = new PageReference('/'+myNewContact.id);
